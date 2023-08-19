@@ -185,7 +185,7 @@ function App() {
           },
           body: JSON.stringify(params)
         };
-        fetch('https://api.openai.com/v1/completions', requestOptions)
+        fetch('https://api.openai.com/v1/completions', requestOptions) //<--------- change the api link here to gpt4's link
           .then(response => {
             if (!response.ok) {
               switch (response.status) {
